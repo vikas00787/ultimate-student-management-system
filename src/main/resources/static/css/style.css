@@ -1,0 +1,204 @@
+/* ==============================
+   GLOBAL VARIABLES
+============================== */
+
+:root {
+    --primary: #4e73df;
+    --primary-dark: #224abe;
+    --success: #1cc88a;
+    --danger: #e74a3b;
+    --dark: #2c3e50;
+    --light-bg: #f8f9fc;
+    --card-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ==============================
+   GLOBAL STYLES
+============================== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--light-bg);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Smooth scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==============================
+   HEADER SECTION
+============================== */
+
+.header-bg {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 60px 0;
+    border-radius: 0 0 30px 30px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ==============================
+   DASHBOARD CARDS
+============================== */
+
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Card hover effect */
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Card number */
+
+.stat-card h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+/* Card label */
+
+.stat-card p {
+    margin: 0;
+    color: #777;
+    font-weight: 500;
+}
+
+/* ==============================
+   TABLE STYLING
+============================== */
+
+.custom-table {
+    width: 90%;
+    margin: 30px auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.custom-table thead {
+    background: var(--primary);
+    color: white;
+}
+
+.custom-table th {
+    padding: 15px;
+    font-weight: 600;
+}
+
+.custom-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+/* Row hover */
+
+.custom-table tbody tr:hover {
+    background: #f3f6ff;
+    transition: 0.2s;
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+
+.btn-custom {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+/* Success Button */
+
+.btn-success-custom {
+    background: var(--success);
+    color: white;
+}
+
+.btn-success-custom:hover {
+    background: #17a673;
+    transform: translateY(-2px);
+}
+
+/* Primary Button */
+
+.btn-primary-custom {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary-custom:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Danger Button */
+
+.btn-danger-custom {
+    background: var(--danger);
+    color: white;
+}
+
+.btn-danger-custom:hover {
+    background: #c0392b;
+}
+
+/* ==============================
+   SCROLLBAR (Modern UI)
+============================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 768px) {
+
+    .custom-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+}

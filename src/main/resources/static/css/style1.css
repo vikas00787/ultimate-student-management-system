@@ -1,0 +1,135 @@
+/* ==============================
+   ROOT COLORS
+============================== */
+:root {
+	--primary: #4e73df;
+	--primary-dark: #224abe;
+	--success: #1cc88a;
+	--success-dark: #17a673;
+	--danger: #e74a3b;
+	--dark: #2c3e50;
+	--light-bg: #f8f9fc;
+	--card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ==============================
+   GLOBAL BODY
+============================== */
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--light-bg);
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+/* ==============================
+   STUDENT HEADER
+============================== */
+.header-bg-student {
+	background: linear-gradient(135deg, var(--success), var(--success-dark));
+	color: white;
+	padding: 45px;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+	transition: 0.3s;
+}
+
+/* hover effect */
+.header-bg-student:hover {
+	transform: translateY(-3px);
+}
+
+/* ==============================
+   STUDENT CARD
+============================== */
+.student-card {
+	background: white;
+	border-radius: 15px;
+	padding: 25px;
+	box-shadow: var(--card-shadow);
+	transition: all 0.3s ease;
+	margin-bottom: 20px;
+}
+
+.student-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ==============================
+   TABLE STYLE
+============================== */
+.custom-table {
+	width: 100%;
+	background: white;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: var(--card-shadow);
+}
+
+.custom-table thead {
+	background: var(--success);
+	color: white;
+}
+
+.custom-table th {
+	padding: 15px;
+	font-weight: 600;
+}
+
+.custom-table td {
+	padding: 12px;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+}
+
+/* row hover */
+.custom-table tbody tr:hover {
+	background: #f2fff7;
+	transition: 0.2s;
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+.btn-student {
+	padding: 8px 18px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: all 0.25s ease;
+}
+
+.btn-student-success {
+	background: var(--success);
+	color: white;
+}
+
+.btn-student-success:hover {
+	background: var(--success-dark);
+	transform: translateY(-2px);
+}
+
+.btn-student-danger {
+	background: var(--danger);
+	color: white;
+}
+
+.btn-student-danger:hover {
+	background: #c0392b;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media ( max-width :768px) {
+	.header-bg-student {
+		padding: 30px;
+	}
+	.custom-table {
+		font-size: 14px;
+	}
+}
